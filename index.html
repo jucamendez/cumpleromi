@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>¡Feliz Cumpleaños!</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #ffe3e3, #ffd6f6);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      text-align: center;
+      transition: background 0.5s;
+    }
+
+    #inicio, #mensaje {
+      padding: 20px;
+      border-radius: 20px;
+      background: white;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      max-width: 600px;
+      margin: 20px;
+    }
+
+    #mensaje {
+      display: none;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      margin-top: 15px;
+    }
+
+    .instruccion {
+      font-size: 0.9em;
+      color: gray;
+      margin-top: 10px;
+    }
+
+    h1 {
+      color: #e63946;
+    }
+  </style>
+</head>
+<body onclick="mostrarMensaje()">
+
+  <div id="inicio">
+    <h1>¡Haz clic para comenzar!</h1>
+    <p><strong>Escribe aquí tu mensaje de bienvenida:</strong></p>
+    <p>Querida Romina, hoy quiero desearte...</p>
+    <p class="instruccion">(*Este mensaje lo puedes editar directamente en el código*)</p>
+  </div>
+
+  <div id="mensaje">
+    <h1>¡Feliz Cumpleaños, Romina! 🎉🎂</h1>
+    <p><strong>Aquí puedes escribir tu mensaje especial de cumpleaños 💖</strong></p>
+    <p>Hoy celebramos tu vida, tu alegría, tu esencia. Te deseo todo lo mejor del universo. 🌟</p>
+
+    <!-- Aquí agregas tus imágenes manualmente -->
+    <img src="c:\Users\pugap\Pictures\EUGE5893.JPG" alt="Us">
+    <img src="c:\Users\pugap\Pictures\ELKR8468.JPG" alt="Otra foto de Romina">
+    <img src=c:\Users\pugap\Pictures\FQVG5983.JPG alt="Nosotros">
+    <img src=c:\Users\pugap\Pictures\FQVG5983.JPG alt="Nosotros">
+    <img src=c:\Users\pugap\Pictures\dd3c6375-3e51-47c8-86ec-21e1b553fb14.jpg alt="Día raro pero bonito">
+    <p class="instruccion">(*Coloca tus imágenes en la carpeta "img" y cambia aquí el nombre si quieres agregar más*)</p>
+  </div>
+
+  <script>
+    function mostrarMensaje() {
+      document.getElementById("inicio").style.display = "none";
+      document.getElementById("mensaje").style.display = "block";
+      document.body.style.background = "#fff0f5";
+    }
+  </script>
+</body>
+</html>ñ
